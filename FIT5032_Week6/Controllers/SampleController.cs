@@ -28,13 +28,16 @@ namespace FIT5032_Week6.Controllers
 
         // POST: Sample/Create
         [HttpPost]
-        public ActionResult Create(FormCollection collection)
+        public ActionResult Create(FIT5032_Week6.Models.FormOneViewModel model)
         {
             try
             {
+                String FirstName = model.FirstName;
+                String LastName = model.LastName;
+                ViewBag.FullName = FirstName + " " + LastName;
                 // TODO: Add insert logic here
 
-                return RedirectToAction("Index");
+                return View();
             }
             catch
             {
