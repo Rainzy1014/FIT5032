@@ -1,0 +1,2 @@
+Woff2 format font is the abbreviation of web open format font 2. Compared with woff format font, woff2 uses brotli for compression, which greatly reduces the size of font files and is more conducive to network transmission.
+
